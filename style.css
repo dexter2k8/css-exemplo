@@ -34,7 +34,7 @@ header .container {
 
 #header-whatsapp {
     padding: 4px 0 3px 28px;
-    background: url(/img/popular.png) -55px -51px no-repeat;
+    background: url(./img/popular.png) -55px -51px no-repeat;
     background-size: 85px;
 }
 
@@ -44,7 +44,7 @@ header .container {
 
 #header-facebook {
     padding: 4px 0 3px 28px;
-    background: url(/img/popular.png) -28px -51px no-repeat;
+    background: url(./img/popular.png) -28px -51px no-repeat;
     background-size: 85px;
 }
 
@@ -54,7 +54,7 @@ header .container {
 
 #header-instagram {
     padding: 4px 0 3px 28px;
-    background: url(/img/popular.png) -2px -51px no-repeat;
+    background: url(./img/popular.png) -2px -51px no-repeat;
     background-size: 85px;
 }
 
@@ -182,7 +182,7 @@ main.container {
 }
 
 #whatsapp {
-    background: url(/img/social.png) -440px -150px no-repeat;
+    background: url(./img/social.png) -440px -150px no-repeat;
     background-size: 600px;
 }
 
@@ -191,7 +191,7 @@ main.container {
 }
 
 #facebook {
-    background: url(/img/social.png) -312px -87px no-repeat;
+    background: url(./img/social.png) -312px -87px no-repeat;
     background-size: 600px;
 }
 
@@ -200,7 +200,7 @@ main.container {
 }
 
 #tweeter {
-    background: url(/img/social.png) -440px -87px no-repeat;
+    background: url(./img/social.png) -440px -87px no-repeat;
     background-size: 600px;
 }
 
@@ -209,7 +209,7 @@ main.container {
 }
 
 #pinterest {
-    background: url(/img/social.png) -440px -215px no-repeat;
+    background: url(./img/social.png) -440px -215px no-repeat;
     background-size: 600px;
 }
 
@@ -218,7 +218,7 @@ main.container {
 }
 
 #instagram {
-    background: url(/img/social.png) -376px -87px no-repeat;
+    background: url(./img/social.png) -376px -87px no-repeat;
     background-size: 600px;
 }
 
@@ -238,7 +238,7 @@ main.container {
     color: white;
     height: 70px;
     /* Efeito de brilho no background */
-    background: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5)), url(/img/asidebkg.jpg) 0 -183px no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5)), url(./img/asidebkg.jpg) 0 -183px no-repeat;
     background-size: 445px;
     padding: 10px;
 }
@@ -264,7 +264,7 @@ main.container {
     font-weight: 700;
     color: #4d4746;
     padding: 0 0 0 17px;
-    background: url(/img/fb.png) 1px -19px no-repeat;
+    background: url(./img/fb.png) 1px -19px no-repeat;
 }
 
 #aside-like span:hover {
