@@ -65,8 +65,8 @@ header .container {
 header form input {
     color: white;
     border: none;
-    outline: none;
     /*Remove border on focus*/
+    outline: none;    
     background-color: transparent;
     transform: translateY(-25px);
 }
@@ -74,9 +74,7 @@ header form input {
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(255, 255, 255, 0.671);
-    font-style: italic;
-    opacity: 1;
-    /* Firefox */
+    font-style: italic;    
 }
 
 header form button {
@@ -85,7 +83,7 @@ header form button {
     border: none;
     background-color: transparent;
     transform: translateY(-25px);
-    cursor: pointer;
+    cursor: pointer;    
 }
 
 header form {
@@ -94,7 +92,9 @@ header form {
     height: 6px;
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
-    border-right: 2px solid #fff;
+    border-right: 2px solid #fff; 
+    /* avoid broken line contents */
+    white-space: nowrap;   
 }
 
 .header-content {
@@ -169,10 +169,14 @@ main.container {
     margin-bottom: 22px;
 }
 
-.main-content article img {
+.main-content article img, iframe {
     display: block;
     margin: 0 auto;
     margin-bottom: 22px;
+}
+
+.main-content article iframe {
+    height: 412px;    
 }
 
 .main-content article .meta-bottom {
