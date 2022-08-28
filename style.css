@@ -66,7 +66,7 @@ header form input {
     color: white;
     border: none;
     /*Remove border on focus*/
-    outline: none;    
+    outline: none;
     background-color: transparent;
     transform: translateY(-25px);
 }
@@ -74,7 +74,7 @@ header form input {
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: rgba(255, 255, 255, 0.671);
-    font-style: italic;    
+    font-style: italic;
 }
 
 header form button {
@@ -83,7 +83,7 @@ header form button {
     border: none;
     background-color: transparent;
     transform: translateY(-25px);
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 header form {
@@ -92,9 +92,9 @@ header form {
     height: 6px;
     border-bottom: 2px solid #fff;
     border-left: 2px solid #fff;
-    border-right: 2px solid #fff; 
+    border-right: 2px solid #fff;
     /* avoid broken line contents */
-    white-space: nowrap;   
+    white-space: nowrap;
 }
 
 .header-content {
@@ -110,8 +110,8 @@ header form {
     margin-top: 5px;
     height: 165px;
     background-position: center;
-    background-repeat: no-repeat;    
-    transition: 0.5s;    
+    background-repeat: no-repeat;
+    transition: 0.5s;
 }
 
 .header-content .container:hover {
@@ -169,14 +169,15 @@ main.container {
     margin-bottom: 22px;
 }
 
-.main-content article img, iframe {
+.main-content article img,
+iframe {
     display: block;
     margin: 0 auto;
     margin-bottom: 22px;
 }
 
 .main-content article iframe {
-    height: 412px;    
+    height: 412px;
 }
 
 .main-content article .meta-bottom {
@@ -248,7 +249,7 @@ main.container {
     font-size: 13px;
     color: white;
     height: 70px;
-    /* Efeito de brilho no background */
+    /* Ajuste do brilho no background */
     background: linear-gradient(rgba(0, 0, 0, -0.5), rgba(0, 0, 0, 0.5)), url(./img/asidebkg.jpg) 0 -183px no-repeat;
     background-size: 445px;
     padding: 10px;
@@ -259,9 +260,12 @@ main.container {
     width: 50px;
     margin: 0 5px -5px 0;
     transition: 0.3s ease;
+    /* evita que a imagem se deforme dentro do box */
+    object-fit: cover;
 }
 
 .aside-post img:hover {
+    /* efeito de brilho */
     filter: brightness(1.25);
 }
 
@@ -316,4 +320,45 @@ main.container {
 .aside-contact a:hover {
     font-weight: 700;
     color: blue;
+}
+
+/* Design responsivo para dispositivos móveis */
+@media (max-width: 460px) {
+    header form {
+        transform: translateY(0px);  
+        width: 90%; 
+    }
+    header .container {
+        flex-direction: column;
+        padding: 10px 0;
+        height: 75px;
+    }
+    .header-content {
+        margin-bottom: 20px;
+    }
+
+    .header-content .container {
+        height: 65px;
+        background-size: 95%;
+    }
+
+    header form input {
+        width: 90%;
+    }
+
+    .main-content {
+        margin: 0 10px;
+    }
+
+    .aside-wrapper {
+        display: none;
+    }
+
+    .main-wrapper {
+        width: 100%;
+    }
+
+    .meta-bottom span {
+        display: none;
+    }
 }
